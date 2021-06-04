@@ -16,7 +16,7 @@ body {
 
 h {
     font-weight: bold;
-    font-size: calc(1.1 * var(--base-font-size));
+    font-size: calc(1.2 * var(--base-font-size));
 }
 
 h2 {

@@ -11,7 +11,7 @@ function top_new_list_click() {
 function faction_hivespawn_drones_click() {
     state = "list_main"
 
-    list_main_header = "=!= HYPERMAW SERVANTS =!=";
+    list_main_header = "=!= HIVESPAWN DRONES =!=";
     document.getElementById("list_main_header").innerText = list_main_header
 
     document.getElementById("top").style.display = "none";
