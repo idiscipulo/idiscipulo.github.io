@@ -6,26 +6,26 @@
 body {
     background-color: #797979;
     font-family: 'sharetechmono regular';
-    font-size: 16pt;
+    font-size: 1.5vw;
     color: #dddddd;
 }
 
 h {
     font-weight: bold;
-    font-size: 24pt;
+    font-size: 3vw;
 }
 
 h2 {
     color: #6d6d6d;
-    font-size: 12pt;
-    margin-top: 4pt;
+    font-size: 1vw;
+    margin-top: 1vh;
 }
 
 .main {
     background-color: #494949;
     margin-top: 30vh;
-    padding: 10pt;
-    width: 500pt;
+    padding: 2vw;
+    width: 80vw;
 }
 
 .page {
@@ -34,21 +34,14 @@ h2 {
 
 .button {
     background-color: #5f9ea0;
-    width: 180pt;
-    margin-top: 5pt;
-    margin-bottom: 5pt;
-    padding: 3pt;
+    width: 35vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
     cursor: pointer;
 }
 
 .button.list_main_delete {
     background-color: #a05f5f;
-}
-
-.list_area {
-    background-color: #525252;
-    margin: 5pt;
-    padding: 5pt;
-    width: 400pt;
-    min-height: 28pt;
 }
