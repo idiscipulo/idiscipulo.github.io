@@ -15,6 +15,12 @@ h {
     font-size: 24pt;
 }
 
+h2 {
+    color: #6d6d6d;
+    font-size: 12pt;
+    margin-top: 4pt;
+}
+
 .main {
     background-color: #494949;
     margin-top: 30vh;
