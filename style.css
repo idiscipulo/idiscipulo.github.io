@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #696969;
+    background-color: #797979;
     font-family: 'sharetechmono regular';
     font-size: 16pt;
     color: #dddddd;
@@ -16,7 +16,10 @@ h {
 }
 
 .main {
+    background-color: #494949;
     margin-top: 30vh;
+    padding: 10pt;
+    width: 500pt;
 }
 
 .page {
@@ -30,4 +33,16 @@ h {
     margin-bottom: 5pt;
     padding: 3pt;
     cursor: pointer;
+}
+
+.button.list_main.delete {
+    background-color: #a05f5f;
+}
+
+.list_area {
+    background-color: #525252;
+    margin: 5pt;
+    padding: 5pt;
+    width: 400pt;
+    min-height: 28pt;
 }

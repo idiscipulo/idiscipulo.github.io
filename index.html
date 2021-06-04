@@ -6,19 +6,24 @@
         <script src="script.js"></script>
     </head>
     <body>
-        <div class="main">
-            <center>
+        <center>
+            <div class="main">
                 <div class="page" id="top" style="display: block;">
                     <h>=!= STUDIONBS TABLETOP GAME =!=</h>
                     <div class="button top" id="top_new_list" onclick="top_new_list_click()">New List</div>
                 </div>
                 <div class="page" id="faction">
                     <h>=!= CHOOSE A FACTION =!=</h>
-                    <div class="button faction" id="faction_hypermaw_drifters" onclick="faction_hypermaw_drifters_click()">Hypermaw Drifters</div>
+                    <div class="button faction" id="faction_hypermaw_servants" onclick="faction_hypermaw_servants_click()">Hypermaw Servants</div>
                     <div class="button faction" id="faction_walrus_collective" onclick="faction_walrus_collective_click()">Walrus Collective</div>
-                    <div class="button faction" id="faction_back" onclick="faction_back_click()">Back</div>
+                    <div class="button" id="back" onclick="back_click()">Back</div>
                 </div>
-            </center>
-        </div>
+                <div class="page" id="list_main">
+                    <h id="list_main_header"></h>
+                    <div class="button list_main delete" id="list_main_delete" onclick="list_main_delete_click()">Delete</div>
+                    <div class="button" id="back" onclick="back_click()">Back</div>
+                </div>
+            </div>
+        </center>
     </body>
 </html>
