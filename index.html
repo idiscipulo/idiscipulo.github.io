@@ -1,31 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Tabletop Game</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <script src="script.js"></script>
+        <!-- Recommended meta tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <!-- PyScript CSS -->
+        <link rel="stylesheet" href="https://pyscript.net/releases/2024.3.1/core.css">
+        <!-- This script tag bootstraps PyScript -->
+        <script type="module" src="https://pyscript.net/releases/2024.3.1/core.js"></script>
     </head>
     <body>
-        <center>
-            <div class="main">
-                <div class="page" id="top" style="display: block;">
-                    <h>=!= TABLETOP GAME =!=</h>
-                    <div class="button top" id="top_new_list" onclick="top_new_list_click()">New List</div>
-                </div>
-                <div class="page" id="faction">
-                    <h>=!= CHOOSE A FACTION =!=</h>
-                    <div class="button faction" id="faction_hivespawn_drones" onclick="faction_hivespawn_drones_click()">Hivespawn Drones [Monsters]</div>
-                    <div class="button faction" id="faction_walrus_collective" onclick="faction_walrus_collective_click()">Walrus Collective [Robots]</div>
-                    <div class="button faction" id="faction_servants_of_luna" onclick="faction_servants_of_luna_click()">Servants Of Luna [Humans]</div>
-                    <div class="button" id="back" onclick="back_click()">Back</div>
-                </div>
-                <div class="page" id="list_main">
-                    <h id="list_main_header"></h>
-                    <div class="button list_main_delete" id="list_main_delete" onclick="list_main_delete_click()">Delete List</div>
-                    <div class="button" id="back" onclick="back_click()">Back</div>
-                </div>
-            </div>
-            <h2>== Version 0.0.4 ==</h2>
-        </center>
+        <script type="mpy" src="main.py"></script>
     </body>
 </html>
