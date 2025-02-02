@@ -1,60 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSV Data Display with PyScript</title>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        table, th, td {
-            border: 1px solid black;
-        }
-
-        th, td {
-            padding: 10px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #f2f2f2;
-        }
-    </style>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pyscript@0.9.0/dist/pyscript.css">
-</head>
-<body>
-    <h1>CSV Data Display with PyScript</h1>
-    
-    <!-- Placeholder for the table -->
-    <div id="table-container"></div>
-
-    <!-- PyScript setup -->
-    <py-script>
-        import pandas as pd
-        from pyodide.http import open_url
-
-        # URL of the CSV file (hardcoded)
-        csv_url = "data.csv"  # Replace with your actual CSV URL
-
-        # Fetch the CSV data
-        response = open_url(csv_url)
-        csv_data = response.read().decode()
-
-        # Read the CSV data into a pandas DataFrame
-        df = pd.read_csv(pd.compat.StringIO(csv_data))
-
-        # Create an HTML table from the DataFrame
-        table_html = df.to_html(classes="table table-striped", index=False)
-
-        # Insert the table HTML into the page
-        from pyscript import Element
-        Element("table-container").write(table_html)
-    </py-script>
-
-    <!-- PyScript Script -->
-    <script defer src="https://cdn.jsdelivr.net/npm/pyscript@0.9.0/dist/pyscript.js"></script>
-</body>
+<html>
+    <head>
+        <!-- Recommended meta tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <!-- PyScript CSS -->
+        <link rel="stylesheet" href="https://pyscript.net/releases/2024.3.1/core.css">
+        <!-- This script tag bootstraps PyScript -->
+        <script type="module" src="https://pyscript.net/releases/2024.3.1/core.js"></script>
+    </head>
+    <body>
+        <table class="SortableTable">
+            <thead>
+                <tr>
+                    <th><button>Header 1</button></th>
+                    <th><button>Header 2</button></th>
+                    <th><button>Header 3</button></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Banana</td><td>2</td><td>Yellow</td></tr>
+                <tr><td>Apple</td><td>1</td><td>Red</td></tr>
+                <tr><td>Cherry</td><td>3</td><td>Red</td></tr>
+            </tbody>
+        </table>
+        <script type="mpy" src="main.py"></script>
+    </body>
 </html>
